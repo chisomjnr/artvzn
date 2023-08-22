@@ -22,16 +22,16 @@
 
   --maximum-blue-green:  hsl(42, 98%, 55%);
   --selective-yellow: hsl(42, 98%, 55%);
-  --eerie-black_70: hsla(240, 1%, 14%, 0.7);
+  --eerie-black_70: hsla(0, 0%, 0%, 0.7);
   --granite-gray: hsl(0, 0%, 40%);
   --spanish-gray: hsl(0, 0%, 57%);
-  --oxford-blue: hsl(243, 95%, 8%);
+  --oxford-blue: black,
   --eerie-black: hsl(214, 10%, 14%);
-  --xiketic: hsl(240, 100%, 6%);
+  --xiketic: hsl(0, 0%, 0%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
   --white_10: hsla(0, 0%, 100%, 0.1);
-  --jet: hsl(225, 4%, 21%);
+  --jet: hsl(0, 0%, 0%);
 
   /**
    * typography
@@ -351,7 +351,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--xiketic);
+  background-color: black;
   z-index: 4;
 }
 
@@ -814,6 +814,10 @@ body {
   /**
    * REUSED STYLE
    */
+
+   .hero-text{
+    margin-bottom: 150px;
+   }
 
   .container {
     max-width: 540px;
