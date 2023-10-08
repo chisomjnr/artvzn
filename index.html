@@ -16,7 +16,7 @@
   <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+ vendorsxml">
 
   <!-- 
     - custom css link
@@ -29,7 +29,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Work+Sans:wght@400;500;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Work+ vendorsSans:wght@400;500;700&display=swap"
     rel="stylesheet">
 
   <!-- 
@@ -47,7 +47,7 @@
   -->
 
   <header class="header" data-header
-   style="background-color: rgb(24, 24, 24);">
+   style="background-color: rgb(24, 24, 24);;">
     <div class="header-top">
       <div class="container">
 
@@ -110,7 +110,7 @@
             </li>
 
             <li>
-              <a href="#" class="navbar-link">Shop</a>
+              <a href="#" class="navbar-link">Profile</a>
             </li>
 
             <li>
@@ -125,16 +125,15 @@
 
         </nav>
 
-        <!-- <a href="tel:+0123456789" class="header-contact-link">
+        <!-- <a href="tel:+ vendors0123456789" class="header-contact-link">
           <ion-icon name="phone-call" aria-hidden="true"></ion-icon>
 
-          <span class="span">(+01)-234-56789</span>
+          <span class="span">(+ vendors01)-234-56789</span>
         </a> -->
 
       </div>
     </div>
 
-    <div class="overlay" data-overlay data-nav-toggler></div>
   </header>
 
 
@@ -143,52 +142,51 @@
 
   <main>
     <article>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var video = document.getElementById("myVideo");
+            video.removeAttribute("controls"); // Remove the default video controls
+            video.play(); // Play the video automatically
+        });
+    </script>
 
-      <!-- 
-        - #HERO
-      -->
-
-      <section class="section hero has-bg-image" aria-label="home"
-        style="background-color: rgb(0, 0, 0);">
-        <div class="container">
-
-          <div class="hero-content">
-
-            <!-- <h1 class="h1 hero-title has-after">
-              For The<br>
-              Creeators
-            </h1>
-
-            <p class="hero-text">
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in some formr.
-            </p> -->
-
-            <div class="btn-wrapper">
-
-              <a href="#" class="btn">
-                <span  class="span">Explore More</span>
-
-                <ion-icon name="cart" aria-hidden="true"></ion-icon>
-              </a>
-
-              <button class="play-btn" aria-label="play video">
-                <ion-icon name="play-outline" aria-hidden="true"></ion-icon>
-              </button>
-
+   <!-- Carousel Start -->
+   <div class="carousel">
+    <div class="container-fluid">
+        <div class="owl-carousel">
+            <div class="carousel-item">
+               
+      
+                    <video  id="myVideo" autoplay loop muted>
+                      <source src="assets/images/vimp.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                  </video>
+               
+                <div class="carousel-text">
+                    <h1>Fluid.io</h1>
+                    <p>
+                        Let's create a community where love and hope can be shared amongst children of the less & lesser privilege.
+                    </p>
+                    <div class="carousel-btn">
+                      <a href="#" class="btn">
+                        <span  class="span">Explore More</span>
+        
+                        <ion-icon name="cart" aria-hidden="true"></ion-icon>
+                      </a>
+              
+                    </div>
+                </div>
             </div>
 
-          </div>
-
-          <!-- <figure class="hero-banner">
-            <img src="./assets/images/Lenasemenkova_ I will design you a unique poster for N85 on fiverr_com.jpg" width="475" height="600" alt="hero banner" class="w-100" 
-            style=" border-radius: 20px;">
-          </figure> -->
-
+            </div>
+  
         </div>
-      </section>
+    </div>
+
+<!-- Carousel End -->
 
 
+     
 
 
 
@@ -206,19 +204,18 @@
             <li>
               <div class="feature-card"
               style="background-color:  #0079FF;;
-              color: black;"
+              color: white;"
               >
 
                 <div class="card-icon">
-                  <img src="./assets/images/font.png" width="100" height="100" loading="lazy" alt="feature icon"
-                    class="w-100">
+                  <ion-icon style="font-size: 50px;" name="wine" aria-hidden="true"></ion-icon>
                 </div>
 
                 <div>
-                  <h3 class="h3 card-title">Weddings</h3>
+                  <h3 style="font-size: 20px;" class="h3 card-title">Weddings</h3>
 
                   <p class="card-text"
-                  style="font-size: 13px;">We Have Over 3000+</p>
+                  style="font-size: 13px;">Connect with Over 300+ vendors</p>
                 </div>
 
               </div>
@@ -227,19 +224,18 @@
             <li>
               <div class="feature-card"
               style="background-color:  #0079FF;;
-              color: black;"
+              color: white;"
               >
 
-                <div class="card-icon">
-                  <img src="./assets/images/transition.png" width="100" height="100" loading="lazy" alt="feature icon"
-                    class="w-100">
-                </div>
+              <div class="card-icon">
+                <ion-icon style="font-size: 50px;" name="mic" aria-hidden="true"></ion-icon>
+              </div>
 
                 <div>
-                  <h3 class="h3 card-title">Clubs</h3>
+                  <h3 style="font-size: 20px;" class="h3 card-title">Clubs</h3>
 
                   <p class="card-text"
-                  style="font-size: 13px;">We have Over 1000+</p>
+                  style="font-size: 13px;">Connect with Over 100+ vendors</p>
                 </div>
 
               </div>
@@ -248,19 +244,17 @@
             <li>
               <div class="feature-card"
               style="background-color:  #0079FF;;
-              color: black;"
+              color: white;"
               >
 
-                <div class="card-icon">
-                  <img src="./assets/images/magic-wand.png" width="100" height="100" loading="lazy" alt="feature icon"
-                    class="w-100">
-                </div>
-
+              <div class="card-icon">
+                <ion-icon style="font-size: 50px;" name="briefcase" aria-hidden="true"></ion-icon>
+              </div>
                 <div>
-                  <h3 class="h3 card-title">Confrences</h3>
+                  <h3 style="font-size: 20px;" class="h3 card-title">Conferences</h3>
 
                   <p class="card-text"
-                  style="font-size: 13px;">We have Over 2000+</p>
+                  style="font-size: 13px;">Connect with Over 200+ vendors</p>
                 </div>
 
               </div>
@@ -269,19 +263,18 @@
             <li>
               <div class="feature-card"
               style="background-color:  #0079FF;;
-              color: black;"
+              color: white;"
               >
 
-                <div class="card-icon">
-                  <img src="./assets/images/layers.png" width="100" height="100" loading="lazy" alt="feature icon"
-                    class="w-100">
-                </div>
+              <div class="card-icon">
+                <ion-icon style="font-size: 50px;" name="cart" aria-hidden="true"></ion-icon>
+              </div>
 
                 <div>
-                  <h3 class="h3 card-title">Others</h3>
+                  <h3 style="font-size: 20px;" class="h3 card-title">Others</h3>
 
                   <p class="card-text"
-                  style="font-size: 13px;">We have Over 5000+</p>
+                  style="font-size: 13px;">Connect with Over 1000+ vendors</p>
                 </div>
 
               </div>
