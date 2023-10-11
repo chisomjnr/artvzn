@@ -323,7 +323,7 @@ nav {
 
 .blogs__card .ll{
   font-size: 15px;
-  color: white;
+  color: orangered;
   
 }
 
@@ -662,8 +662,8 @@ nav {
   }
 
   .section__subheader{
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
 
