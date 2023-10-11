@@ -25,11 +25,12 @@
 
 
 .section__header {
-  margin-bottom: 2rem;
+  margin-bottom: 10px;
   font-size: 3rem;
   font-weight: 800;
   font-family: var(--header-font);
   text-align: center;
+
 }
 
 .section__subheader {
@@ -45,7 +46,7 @@ span{
 .btn {
   padding: 18px 20px;
   font-family: poppins;
-  font-weight: 600;
+  font-weight: 500;
   outline: none;
   border: none;
   font-size: 1rem;
@@ -304,11 +305,33 @@ nav {
 .blogs__grid {
   margin-top: 4rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .blogs__card {
   position: relative;
+  padding:110px ;
+  margin: 20px;
+  border-radius: 20px;
+  color: #0a0d14;
+  background-color:#f4e009;
+  border: 2px solid #f4e009;
+  box-shadow:0px 5px 30px #f4e0096c;
+  transition: .2s;
+}
+
+.blogs__card .ll{
+  font-size: 15px;
+  color: white;
+  
+}
+
+.blogs__card:hover{
+  cursor: pointer;
+  transform: translateY(-10px);
+  background-color: black;
+  color: #f4e009;
 }
 
 .blogs__card::after {
@@ -318,7 +341,7 @@ nav {
   height: 100%;
   left: 0;
   top: 0;
-  background-image: linear-gradient(to top, var(--primary-color), transparent);
+  /* background-image: linear-gradient(to top, #f48609, transparent); */
 }
 
 .blogs__content {
@@ -412,7 +435,25 @@ nav {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px var(--extra-light);
-}
+  animation-name: float;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+
+        /* Create the animation */
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+
+            100% {
+              transform: translateY(0px);
+            }
+        }
 
 .gallery__container {
   padding: 5rem 1rem;
@@ -614,12 +655,29 @@ nav {
 }
 
 @media (max-width: 500px) {
+  .section__header{
+    font-size: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .section__subheader{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+
   .header__container {
     text-align: center;
   }
 
   .header__container h4 {
     margin-left: 0;
+  }
+
+  
+  .header__container h1 {
+    font-size: 70px;
   }
 
   .about__card {
