@@ -323,11 +323,12 @@ nav {
 
 .blogs__card .ll{
   font-size: 15px;
-  color: orangered;
-  
+  color: #20242f;
+ 
 }
 
 .blogs__card:hover{
+  
   cursor: pointer;
   transform: translateY(-10px);
   background-color: black;
@@ -656,12 +657,13 @@ nav {
 
 @media (max-width: 500px) {
   .section__header{
-    font-size: 40px;
+    font-size: 30px;
     margin-left: 30px;
     margin-right: 30px;
   }
 
   .section__subheader{
+    font-size: 17px;
     margin-left: 10px;
     margin-right: 10px;
   }
