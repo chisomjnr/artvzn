@@ -22,6 +22,8 @@
   padding: 5rem 1rem;
 }
 
+
+
 .section__header {
   margin-bottom: 2rem;
   font-size: 3rem;
@@ -36,20 +38,45 @@
   text-align: center;
 }
 
+span{
+  color:  #ffdd00;
+}
+
 .btn {
-  padding: 0.75rem 1.5rem;
+  padding: 18px 20px;
+  font-family: poppins;
+  font-weight: 600;
   outline: none;
   border: none;
   font-size: 1rem;
   border-radius: 5px;
   color: var(--primary-color);
-  background-color: var(--secondary-color);
+  background: linear-gradient(45deg, #FFFF00, #FFA500);
   cursor: pointer;
+  transition: .2s;
 }
 
 .btn:hover{
-  background-color: black;
-  color: yellow;
+  transform: translateY(-15px);
+}
+
+.btn1{
+  padding: 18px 20px;
+  font-family: poppins;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  color: #f4e009;
+  background: black;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.btn1:hover{
+  background: white;
+  color: #0a0d14;
 }
 
 img {
@@ -81,11 +108,13 @@ header {
 }
 
 nav {
+ 
   background-color: rgba(0, 0, 0, 0.5);
   border-bottom: 1px solid var(--extra-light);
 }
 
 .nav__bar {
+  
   max-width: var(--max-width);
   margin: auto;
   padding: 1.5rem 1rem;
@@ -275,7 +304,7 @@ nav {
 .blogs__grid {
   margin-top: 4rem;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .blogs__card {
@@ -303,6 +332,14 @@ nav {
   z-index: 1;
 }
 
+.journals{
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.05),
+    transparent
+  );
+}
+
 .journals__grid {
   margin-top: 4rem;
   display: grid;
@@ -313,6 +350,8 @@ nav {
 .journals__content {
   padding: 2rem;
   background-color: var(--primary-color-light);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .journals__author {
@@ -321,6 +360,10 @@ nav {
   align-items: center;
   gap: 1rem;
 }
+ .journals__grid img{
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+ }
 
 .journals__author img {
   max-width: 30px;
@@ -365,7 +408,7 @@ nav {
   text-align: center;
   font-size: 12rem;
   font-weight: 700;
-  background-image: url("assets/Screenshot (9).png");
+  background: linear-gradient(45deg, #FFFF00, #FFA500);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px var(--extra-light);
@@ -593,6 +636,7 @@ nav {
 
   .blogs__grid {
     grid-template-columns: repeat(1, 1fr);
+    
   }
 
   .journals__grid {
