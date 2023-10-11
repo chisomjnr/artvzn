@@ -570,7 +570,7 @@ nav {
   }
 }
 
-@media (width < 600px) {
+@media (max-width: 500px) {
   .header__container {
     text-align: center;
   }
