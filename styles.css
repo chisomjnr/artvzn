@@ -1,15 +1,13 @@
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Lisu+Bosa:wght@600;800&family=Poppins:wght@400;500;600;700&display=swap");
 
 :root {
   --primary-color: #0a0d14;
   --primary-color-light: #20242f;
-  --secondary-color:linear-gradient(45deg,#FFFF00, #FFA500 );/* hsla(57, 100%, 50%, 1);*/
+  --secondary-color: #f4e009;
   --extra-light: rgba(255, 255, 255, 0.5);
   --white: #ffffff;
   --max-width: 1200px;
-  --header-font:poppins, serif;
+  --header-font: Poppins, ;
 }
 
 * {
@@ -39,24 +37,19 @@
 }
 
 .btn {
-  padding: 16px 21px;
+  padding: 0.75rem 1.5rem;
   outline: none;
   border: none;
-  font-size: 19px;
-  color: var(--primary-color);
-  background: var(--secondary-color);
-  cursor: pointer;
-
+  font-size: 1rem;
   border-radius: 5px;
-  font-family: poppins;
-  font-weight: 600;
-transition: .1s;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  cursor: pointer;
 }
 
 .btn:hover{
-  background: black;
+  background-color: black;
   color: yellow;
-
 }
 
 img {
@@ -80,7 +73,7 @@ body {
 }
 
 header {
-  background: linear-gradient(to top, var(--primary-color), transparent),
+  background-image: linear-gradient(to top, var(--primary-color), transparent),
     url("assets/Maxime Manga.jfif");
   background-position: center center;
   background-size: cover;
@@ -162,10 +155,6 @@ nav {
   width: 2rem;
   background-color: var(--white);
 }
-
-
-
-
 
 .about__container {
   display: grid;
@@ -293,25 +282,6 @@ nav {
   position: relative;
 }
 
-.blogs__grid2 {
-  margin-top: 4rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.blogs__card2 h3 p{
-  margin: 10px;
-}
-
-.blogs__card2 {
-  position: relative;
-  color: #0a0d14;
-  background: #FFFF00;
-  margin: 20px;
-  border-radius: 10px;
-}
-
-
 .blogs__card::after {
   position: absolute;
   content: "";
@@ -321,17 +291,6 @@ nav {
   top: 0;
   background-image: linear-gradient(to top, var(--primary-color), transparent);
 }
-
-.blogs__card2::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-
-}
-
 
 .blogs__content {
   position: absolute;
@@ -406,7 +365,7 @@ nav {
   text-align: center;
   font-size: 12rem;
   font-weight: 700;
-  background-image: url("assets/banner.jpg");
+  background-image: url("assets/Screenshot (9).png");
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px var(--extra-light);
