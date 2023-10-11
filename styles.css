@@ -521,7 +521,7 @@ nav {
   border-top: 1px solid var(--extra-light);
 }
 
-@media (width < 900px) {
+@media (max-width: 900px) {
   .link:not(.search) {
     display: none;
   }
