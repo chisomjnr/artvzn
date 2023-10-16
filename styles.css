@@ -372,8 +372,9 @@ nav {
 
 
 
-
-
+.blogs .lo{
+  width: 500px;
+}
 
 
 
@@ -729,7 +730,7 @@ nav {
   }
 
 .blogs__grid2 {
-  padding: 100px;
+
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -801,6 +802,7 @@ nav {
   }
 
   .blogs__grid2 {
+    padding: 100px;
     grid-template-columns: repeat(1, 1fr);
     
   }
