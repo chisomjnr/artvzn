@@ -52,6 +52,12 @@ ScrollReveal().reveal(".blogs__card", {
   interval: 400,
 });
 
+// blogs container2
+ScrollReveal().reveal(".blogs__card2", {
+  duration: 1000,
+  interval: 400,
+});
+
 // journals container
 ScrollReveal().reveal(".journals__card", {
   ...scrollRevealOption,
