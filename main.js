@@ -16,6 +16,13 @@ ScrollReveal().reveal(".header__container .btn", {
   ...scrollRevealOption,
   delay: 1000,
 });
+// about container
+ScrollReveal().reveal(" .section__header", scrollRevealOption);
+ScrollReveal().reveal(" .section__subheader", {
+  ...scrollRevealOption,
+  delay: 500,
+});
+
 
 // about container
 ScrollReveal().reveal(".about__container .section__header", scrollRevealOption);
