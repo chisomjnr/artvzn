@@ -298,6 +298,63 @@ nav {
   border-radius: 50%;
 }
 
+
+
+
+
+
+.journals form {
+  display: flex;
+  gap: 5px;
+  font-family: poppins;
+ 
+}
+.journals input {
+  height: 40px;
+  border-radius: 6px;
+  background: none;
+  width: 100%;
+  font-family: poppins;
+  outline: none;
+  border: 1px solid #7489C6 ;
+  caret-color: #fff;
+  color: #fff;
+  padding-left: 10px;
+}
+.journals input::placeholder {
+  color: #ccc;
+}
+ .journals form button {
+  background: #f4e009;
+  outline: none;
+  border: none;
+  font-family: poppins;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+.journals form button:hover {
+  background: black;
+  color: #f4e009;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .discover {
   background-image: linear-gradient(
     to bottom,
@@ -382,10 +439,10 @@ nav {
   margin: 20px;
   border-radius: 20px;
   color: #0a0d14;
-  background-color:#f4e009;
-  border: 2px solid #f4e009;
+  background:linear-gradient(45deg, yellow, rgb(255, 153, 0), rgb(255, 0, 149));
+  border: 2px solid linear-gradient(45deg, yellow, rgb(255, 153, 0), rgb(255, 0, 149));
   box-shadow:0px 5px 30px #f4e0096c;
-  transition: .2s;
+
 }
 
 
@@ -403,9 +460,9 @@ nav {
 .blogs__card:hover{
   
   cursor: pointer;
-  transform: translateY(-10px);
-  background-color: black;
-  color: #f4e009;
+ 
+  
+
 }
 
 .blogs__card::after {
@@ -591,10 +648,10 @@ nav {
 .hero__container p {
   text-align: center;
   font-size: 12rem;
-  font-weight: 700;
-  background: linear-gradient(45deg, #FFFF00, #FFA500);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  background: linear-gradient(68deg, yellow, rgb(255, 0, 149));
+          -webkit-background-clip: text; /* Clip the text to the background */
+          color: transparent;
   -webkit-text-stroke: 1px var(--extra-light);
   animation-name: float;
   animation-duration: 2s;
