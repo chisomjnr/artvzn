@@ -261,6 +261,21 @@ nav {
   text-align: left;
 }
 
+
+.about__container2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+
+.about__container2 :is(.section__header, .section__subheader) {
+  text-align: left;
+}
+
+
+
 .about__flex {
   margin: 2rem 0;
   padding: 2rem 1rem;
