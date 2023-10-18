@@ -148,12 +148,14 @@ nav {
   padding: 1.5rem 5px;
   font-weight: 500;
   color: var(--white);
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .link a:hover {
-  color: var(--secondary-color);
-  border-bottom: 2px solid var(--secondary-color);
+  background: linear-gradient(180deg, yellow, rgb(255, 0, 149));
+  -webkit-background-clip: text; /* Clip the text to the background */
+  color: transparent;
+  border-bottom: 2px solid white
 }
 
 .link span {
@@ -843,7 +845,7 @@ nav {
   }
   
   .header__container h1 {
-    font-size: 40px;
+    font-size: 50px;
   }
 
   .about__card {
