@@ -313,9 +313,38 @@ nav {
   border-radius: 50%;
 }
 
+.about__image .op{
 
+border-radius: 1px;
 
+animation-name: float2;
+animation-duration: 2s;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+}
 
+/* Create the animation */
+@keyframes float2 {
+0% {
+    transform: translateX(0);
+}
+
+100% {
+  transform: translateX(-30px);
+}
+
+50% {
+    transform: translateX(0px);
+}
+
+75% {
+  transform: translateX(30px);
+}
+
+100% {
+  transform: translateX(0px);
+}
+}
 
 
 .journals form {
