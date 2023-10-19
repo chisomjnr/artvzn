@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lisu+Bosa:wght@600;800&family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lisu+Bosa:wght@600;800&family=Shrikhand:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lisu+Bosa:wght@600;800&family=Gochi Hand:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lisu+Bosa:wght@600;800&family=Carter One:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lisu+Bosa:wght@600;800&family=Dela Gothic One:wght@400;500;600;700&display=swap");
+
 
 :root {
   --primary-color: #0a0d14;
@@ -7,7 +12,7 @@
   --extra-light: rgba(255, 255, 255, 0.5);
   --white: #ffffff;
   --max-width: 1200px;
-  --header-font: Poppins, ;
+  --header-font: Poppins ;
 }
 
 * {
@@ -690,13 +695,14 @@ animation-iteration-count: infinite;
 }
 
 .hero__container p {
+  font-family:Gochi Hand ;
   text-align: center;
   font-size: 12rem;
   font-weight: 900;
   background: linear-gradient(68deg, yellow, rgb(255, 0, 149));
           -webkit-background-clip: text; /* Clip the text to the background */
           color: transparent;
-  -webkit-text-stroke: 1px var(--extra-light);
+  
   animation-name: float;
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
@@ -978,6 +984,10 @@ animation-iteration-count: infinite;
 }
   .journals__grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .journals__container{
+    margin: 20px;
   }
 
   .hero__container p {
