@@ -16,6 +16,11 @@ ScrollReveal().reveal(".header__container .btn", {
   ...scrollRevealOption,
   delay: 1000,
 });
+
+ScrollReveal().reveal(".hero", {
+  ...scrollRevealOption,
+  delay: 700,
+});
 // about container
 ScrollReveal().reveal(" .section__header", scrollRevealOption);
 ScrollReveal().reveal(" .section__subheader", {
@@ -30,6 +35,12 @@ ScrollReveal().reveal(".about__container .section__subheader", {
   ...scrollRevealOption,
   delay: 500,
 });
+
+ScrollReveal().reveal(".about__image", {
+  ...scrollRevealOption,
+  delay: 500,
+});
+
 
 ScrollReveal().reveal(".about__container .about__flex", {
   ...scrollRevealOption,
