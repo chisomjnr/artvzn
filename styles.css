@@ -62,15 +62,15 @@ color: #f4e009;
 
 .btn {
   padding: 18px 20px;
-  font-family: poppins;
+  font-family: Poppins;
   font-weight: 500;
   outline: none;
   border: none;
   font-size: 1rem;
-  border-radius: 5px;
+  border-radius: 20px;
   color: var(--primary-color);
   background: linear-gradient(45deg, #FFFF00, #FFA500);
-  cursor: pointer;
+  cursor: poPoppins;
   transition: .2s;
 }
 
@@ -80,15 +80,15 @@ color: #f4e009;
 
 .btn1{
   padding: 18px 20px;
-  font-family: poppins;
+  font-family: Poppins;
   font-weight: 600;
   outline: none;
   border: none;
   font-size: 1rem;
-  border-radius: 5px;
+  border-radius: 20px;
   color: #f4e009;
   background: black;
-  cursor: pointer;
+  cursor: poPoppins;
   transition: .2s;
 }
 
@@ -117,7 +117,11 @@ body {
   background-color: var(--primary-color);
 }
 
-header {
+header{
+  background: #20242f;
+}
+
+.hd {
   background-image: linear-gradient(to top, var(--primary-color), transparent),
     url("assets/Maxime Manga.jfif");
   background-position: center center;
@@ -167,7 +171,7 @@ nav {
 }
 
 .link a:hover {
-  background: linear-gradient(180deg, yellow, rgb(255, 0, 149));
+  background: linear-gradient(130deg, yellow, rgb(255, 0, 149));
   -webkit-background-clip: text; /* Clip the text to the background */
   color: transparent;
   border-bottom: 2px solid white
@@ -176,7 +180,7 @@ nav {
 .link span {
   padding: 1rem 0;
   color: var(--white);
-  cursor: pointer;
+  cursor: poPoppins;
 }
 
 .header__container {
@@ -193,8 +197,8 @@ nav {
   font-size: 18px;
   padding: 15px 30px;
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  border-radius: 10px;
+  cursor: poPoppins;
   position: relative;
   overflow: hidden;
   transition: 0.3s;
@@ -330,42 +334,15 @@ nav {
 
 .about__image .op{
 
-border-radius: 1px;
+border-radius: 10px;
 
-animation-name: float2;
-animation-duration: 2s;
-animation-timing-function: ease-in-out;
-animation-iteration-count: infinite;
-}
-
-/* Create the animation */
-@keyframes float2 {
-0% {
-    transform: translateX(0);
-}
-
-100% {
-  transform: translateX(-30px);
-}
-
-50% {
-    transform: translateX(0px);
-}
-
-75% {
-  transform: translateX(30px);
-}
-
-100% {
-  transform: translateX(0px);
-}
 }
 
 
 .journals form {
   display: flex;
   gap: 5px;
-  font-family: poppins;
+  font-family: Poppins;
  
 }
 .journals input {
@@ -373,7 +350,7 @@ animation-iteration-count: infinite;
   border-radius: 6px;
   background: none;
   width: 100%;
-  font-family: poppins;
+  font-family: Poppins;
   outline: none;
   border: 1px solid #7489C6 ;
   caret-color: #fff;
@@ -387,10 +364,10 @@ animation-iteration-count: infinite;
   background: #f4e009;
   outline: none;
   border: none;
-  font-family: poppins;
+  font-family: Poppins;
   padding: 10px 15px;
   border-radius: 6px;
-  cursor: pointer;
+  cursor: poPoppins;
   font-weight: 600;
   transition: 0.2s ease;
 }
@@ -476,7 +453,7 @@ animation-iteration-count: infinite;
   color: var(--white);
   background-color: transparent;
   border: 1px solid var(--white);
-  cursor: pointer;
+  cursor: poPoppins;
 }
 
 .blogs__container {
@@ -518,7 +495,7 @@ animation-iteration-count: infinite;
 
 .blogs__card:hover{
   
-  cursor: pointer;
+  cursor: poPoppins;
  
   
 
@@ -595,7 +572,7 @@ animation-iteration-count: infinite;
 
 .blogs__card2:hover{
   
-  cursor: pointer;
+  cursor: poPoppins;
 
   transform: translateY(-10px);
   background-color: #f4e009;
@@ -795,7 +772,7 @@ animation-iteration-count: infinite;
   text-align: center;
   border: 1px solid var(--extra-light);
   border-radius: 100%;
-  cursor: pointer;
+  cursor: poPoppins;
 }
 
 .contact__card span {
@@ -843,12 +820,14 @@ animation-iteration-count: infinite;
 .footer__socials span a {
   font-size: 1.5rem;
   color: var(--white);
-  cursor: pointer;
+  cursor: poPoppins;
   transition: 0.3s;
 }
 
 .footer__socials span a:hover {
-  color: var(--secondary-color);
+  background: linear-gradient(130deg, yellow, rgb(255, 0, 149));
+  -webkit-background-clip: text; /* Clip the text to the background */
+  color: transparent;
 }
 
 .footer__container p {
@@ -871,8 +850,12 @@ animation-iteration-count: infinite;
   color: var(--white);
 }
 
+
+
 .footer__link a:hover {
-  color: var(--secondary-color);
+  background: linear-gradient(120deg, yellow, rgb(255, 136, 0),  rgb(255, 0, 119));
+  -webkit-background-clip: text; /* Clip the text to the background */
+  color: transparent;
 }
 
 .footer__bar {
