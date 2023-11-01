@@ -3,7 +3,7 @@
 
 
 /**
- * add event on elements
+ * add Event on elements
  */
 
 const addEventOnElem = function (elem, type, callback) {
@@ -19,11 +19,12 @@ const addEventOnElem = function (elem, type, callback) {
 
 
 /**
- * navbar toogle
+ * navbar toggle
  */
 
 const navbar = document.querySelector("[data-navbar]");
 const navTogglers = document.querySelectorAll("[data-nav-toggler]");
+const navbarLinks = document.querySelectorAll("[data-nav-link]");
 const overlay = document.querySelector("[data-overlay]");
 
 const toggleNavbar = function () {
@@ -33,17 +34,24 @@ const toggleNavbar = function () {
 
 addEventOnElem(navTogglers, "click", toggleNavbar);
 
+const closeNavbar = function () {
+  navbar.classList.remove("active");
+  overlay.classList.remove("active");
+}
+
+addEventOnElem(navbarLinks, "click", closeNavbar);
+
 
 
 /**
- * active header & back top btn when window scroll down to 100px
+ * header & back top btn show when scroll down to 100px
  */
 
 const header = document.querySelector("[data-header]");
 const backTopBtn = document.querySelector("[data-back-top-btn]");
 
-const activeElemOnScroll = function () {
-  if (window.scrollY > 100) {
+const headerActive = function () {
+  if (window.scrollY > 80) {
     header.classList.add("active");
     backTopBtn.classList.add("active");
   } else {
@@ -52,31 +60,4 @@ const activeElemOnScroll = function () {
   }
 }
 
-addEventOnElem(window, "scroll", activeElemOnScroll);
-
-
-
-/**
- * filter functionality
- */
-
-const filterBtn = document.querySelectorAll("[data-filter-btn]");
-const filterItems = document.querySelectorAll("[data-filter]");
-
-let lastClickedBtn = filterBtn[0];
-
-const filter = function () {
-  lastClickedBtn.classList.remove("active");
-  this.classList.add("active");
-  lastClickedBtn = this;
-
-  for (let i = 0; i < filterItems.length; i++) {
-    if (filterItems[i].dataset.filter === this.dataset.filterBtn) {
-      filterItems[i].style.display = "block";
-    } else {
-      filterItems[i].style.display = "none";
-    }
-  }
-}
-
-addEventOnElem(filterBtn, "click", filter);
+addEventOnElem(window, "scroll", headerActive);
