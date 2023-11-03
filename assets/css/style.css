@@ -152,8 +152,8 @@ html {
 }
 
 body {
-  background-color: var(--white);
-  color: var(--slate-gray);
+  background-color: rgb(47, 45, 66);
+  color: white;
   font-size: 1.6rem;
   line-height: 1.75;
 }
@@ -178,13 +178,16 @@ body {
 
 .container { padding-inline: 15px; }
 
-.section { padding-block: var(--section-padding); }
+.section { padding-block: 
+  var(--section-padding); 
+  
+}
 
 .h1,
 .h2 { letter-spacing: -2px; }
 
 .h1 {
-  color: var(--black);
+  color: white;
   font-size: var(--fs-1);
   line-height: 1.1;
 }
@@ -235,6 +238,23 @@ body {
   padding-inline: 50px;
   border-radius: var(--radius-10);
   overflow: hidden;
+background-color: white;
+  color: black;
+  transition: var(--transition-2);
+}
+
+
+.btn2 {
+  max-width: max-content;
+  font-weight: var(--fw-700);
+  height: 65px;
+  display: flex;
+  align-items: center;
+  padding-inline: 50px;
+  border-radius: var(--radius-10);
+  overflow: hidden;
+
+  color: black;
   transition: var(--transition-2);
 }
 
@@ -280,7 +300,7 @@ body {
 }
 
 .btn-secondary::before,
-.btn-secondary::after { background-color: var(--sky-blue-crayola); }
+.btn-secondary::after { background-color: var(--mustard); }
 
 .btn-secondary:is(:hover, :focus) { color: var(--white); }
 
@@ -344,6 +364,7 @@ body {
 
 .header {
   position: fixed;
+  color: white;
   top: 0;
   left: 0;
   width: 100%;
@@ -353,7 +374,7 @@ body {
 }
 
 .header.active {
-  background-color: var(--white);
+  background-color: black;
   padding-block: 15px;
   box-shadow: var(--shadow-1);
 }
@@ -453,7 +474,11 @@ body {
   #HERO
 \*-----------------------------------*/
 
-.hero { padding-block-start: calc(var(--section-padding) + 60px); }
+.hero {
+   padding-block-start: calc(var(--section-padding) + 60px); 
+   background-color: rgb(47, 45, 66);
+  color: white;
+  }
 
 .hero .container {
   display: grid;
@@ -476,7 +501,22 @@ body {
   margin-block-end: 30px;
 }
 
-.hero-btn {
+.hero .btn {
+  
+    max-width: max-content;
+    font-weight: var(--fw-700);
+    height: 55px;
+    display: flex;
+    align-items: center;
+    padding-inline: 50px;
+    border-radius: var(--radius-10);
+    overflow: hidden;
+  box-shadow:0px 2px 50px hsla(49, 84%, 52%, 0.3);
+  background: linear-gradient(705deg, yellow, rgb(255, 0, 149));
+    color: black;
+    transition: var(--transition-2);
+ 
+  
   gap: 15px;
   color: var(--raisin-black-1);
   transition: var(--transition-1);
