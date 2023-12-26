@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Fluid. | Explore the Universe of Live Events.</title>
+  <title>Fluid | Choose Type of Event</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="assets/LOGOS/PNG/SECONDARY/F 1.png">
@@ -24,25 +24,35 @@
   <div class="carousel-inner">
     <div class="carousel-item active" id="colorSection">
       <div class="container">
-        
+     
         <img src="assets/LOGOS/PNG/SECONDARY/F 2.png" width="80" alt="">
-
+   
+        
         <br>
         <br>
         <br>
    
         
-         <p style="font-size: 40px;"> <Strong>What kind of event are you trying to launch?</Strong></p>
+         <p style="font-size: 30px;"> <Strong>What kind of event are you trying to launch?</Strong></p>
        
            <br>
              <br>
+
+             <a href="Error.html" class="btn"><strong>RSVP </strong> Event</a>
+
+             <a href="launch.html" class="btn" style="background: orange; color: rgb(43, 43, 43);"><strong>Paid </strong> Event</a>
              
-        <a href="launch2.html" class="btn"><strong>Free </strong> Event</a>
-        <a href="launch.html" class="btn" style="background: rgb(44, 44, 44); color: orange;"><strong>Ticket </strong> Event</a>
+       
+
+        
         <br>
-        <p style="font-size: 15px;font-weight: bold; color: rgb(119, 118, 118);">Having issues? <a style="color: white;" href="">Contact our support</a></p>
 
 
+        <p style="font-size: 15px;font-weight: bold; color: rgb(90, 90, 90);">Having issues? <a style="color: white;" href="support.html">Contact our support</a></p>
+<br>
+<br>
+        <button style="padding: 12px 20px; background: transparent; border: 2px solid; color: white; font-size: 13px;" id="goBackLink" class="btn">Back to Previous Page</button>
+        
 
          <!-- <a href="login.html" class="ap" style="color: rgb(182, 182, 182); text-decoration: none; font-size: 15px; "> Login or <strong style="text-decoration: underline;">Create an Account with us</strong><br>and fully experience the <strong>Fluid</strong> universe. </a> -->
       </div>
@@ -56,7 +66,13 @@
 </div>
 
  </section>
-
+ <script>
+  document.getElementById("goBackLink").addEventListener("click", function(event) {
+      event.preventDefault(); // Prevent the default behavior of the link
+  
+      history.back(); // Go back to the previous page
+  });
+  </script>
  <script src="prompt.js"></script>
 
 </body>

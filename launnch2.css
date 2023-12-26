@@ -89,8 +89,8 @@
   
   body.light_theme {
   
-	--bg-primary: hsl(0, 0%, 90%);
-	--bg-secondary: hsl(0, 0%, 100%);
+	--bg-primary: hsl(0, 1%, 79%);
+	--bg-secondary: hsl(0, 3%, 86%);
 	--color-primary: hsl(0, 0%, 12%);
 	--color-secondary: hsl(0, 0%, 37%);
 	--card-shadow: hsla(0, 0%, 0%, 0.1);
@@ -419,6 +419,7 @@
 	width: 100%;
 	height: 100%;
 	display: grid;
+	
 	place-items: center;
 	visibility: hidden;
 	transition: 0.75s cubic-bezier(0.71, 0.01, 0.24, 0.99);
@@ -433,8 +434,9 @@
   }
   
   .navbar-list > li {
-	margin-block: 20px;
-	padding-inline: 50px;
+	margin-block: 10px;
+	/* padding-inline: 0px; */
+	
 	overflow: hidden;
   }
   
@@ -444,7 +446,7 @@
 	margin-inline: auto;
 	color: var(--color-primary);
 	font-family: var(--ff-poppins);
-	font-size: var(--fs-1);
+	font-size: 25px;
 	padding: 10px;
 	transform: translateY(50px);
 	transition: 0.75s cubic-bezier(0.68, -0.55, 0.27, 2);

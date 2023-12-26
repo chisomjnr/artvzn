@@ -17,26 +17,26 @@ body{
 
 section {
     width: 100%;
+background: rgb(39, 39, 39);
 
-
-    animation: changeColor 10s infinite alternate; /* Animation properties */
+    animation: changeColor s infinite alternate; /* Animation properties */
 }
 
 @keyframes changeColor {
     0% {
-        background-color: orange; /* Initial color */
+        background-color: orangered; /* Initial color */
     }
 
 	25% {
-        background-color: rgb(216, 216, 216); /* Initial color */
+        background-color:yellow; /* Initial color */
     }
 	50% {
-        background-color: rgb(0, 0, 0); /* Initial color */
+        background-color: orange; /* Initial color */
     }
 
 
     100% {
-		background-color: orange; /* Initial color */
+		background-color: red; /* Initial color */
     }
 }
 .btn:hover{
@@ -209,7 +209,7 @@ img{
   	width: 60px;
   }
   .home .carousel-item h2{
-  	font-size: 45px;
+  	font-size: 30px;
   }
   .home .carousel-item p{
   	font-size: 22px;

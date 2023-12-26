@@ -1,3 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+:root {
+	--blue: rgb(49, 49, 49);
+	--light-blue: #B6DBF6;
+	--dark-blue: orange;
+	--grey: #f2f2f2;
+}
+
+
+
+.container {
+
+	width: 100%;
+	background: #3131316e;
+	padding: 30px;
+	border-radius: 30px;
+}
+.img-area {
+	position: relative;
+	width: 100%;
+	height: 240px;
+	background: var(--grey);
+	margin-bottom: 30px;
+	border-radius: 15px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.img-area .icon {
+	font-size: 80px;
+}
+.img-area h3 {
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 6px;
+}
+.img-area p {
+	color: #999;
+}
+.img-area p span {
+	font-weight: 600;
+}
+.img-area img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	z-index: 100;
+}
+.img-area::before {
+	content: attr(data-img);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .5);
+	color: #fff;
+	font-weight: 500;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	pointer-events: none;
+	opacity: 0;
+	transition: all .3s ease;
+	z-index: 200;
+}
+.img-area.active:hover::before {
+	opacity: 1;
+}
+.select-image {
+	display: block;
+	width: 100%;
+	padding: 16px 0;
+	border-radius: 15px;
+	background: var(--blue);
+	color: #fff;
+	font-weight: 500;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	transition: all .3s ease;
+}
+.select-image:hover {
+	background: var(--dark-blue);
+}
+
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 
 /* Import Google font - Poppins */
@@ -14,11 +116,10 @@ body{
   display: flex;
   padding: 0 10px;
   min-height: 100vh;
-  background: linear-gradient(45deg, yellow, rgb(255, 94, 0), yellow );
+  background: linear-gradient(25deg, rgb(229, 255, 0), rgb(0, 26, 255));
   align-items: center;
   justify-content: center;
 }
-
 
 
 
@@ -28,7 +129,7 @@ body{
   background: #052d25;
 }
 .wrapper{
-
+	
  
     margin-top: 40px;
     margin-bottom: 50px;
@@ -97,7 +198,7 @@ form .dbl-field{
   height: 50px;
   display: flex;
   position: relative;
-  width: calc(100% / 2 - 13px);
+  width: 100%;
 }
 
 
@@ -131,7 +232,7 @@ form .dbl-fieldx{
   }
   .fieldx input::placeholder,
   .message textarea::placeholder{
-	color: #c5c5c5;
+	color: #696969;
   }
   .fieldx input:focus,
   .message textarea:focus{
@@ -142,6 +243,32 @@ form .dbl-fieldx{
   .message textarea:focus ~ i{
 	color: orange;
   }
+
+
+
+
+
+
+
+  #colorButton {
+    padding: 10px;
+    
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #colorPalette {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+  
+
 
 
 
@@ -171,7 +298,7 @@ form .dbl-fieldx{
 form .field input,
 form .message textarea{
   width: 100%;
-  background: rgba(90, 90, 90, 0.363);
+  background: rgba(59, 59, 59, 0.363);
   height: 100%;
   color: #fff;
   outline: none;
@@ -182,31 +309,25 @@ form .message textarea{
   font-weight: bold;
   border: 1px solid transparent;
 }
-
 
 
 form .field select{
   width: 100%;
-  background: rgba(90, 90, 90, 0.363);
+  background: rgba(59, 59, 59, 0.363);
   height: 100%;
   color: #fff;
   outline: none;
-  font-family: poppins;
-  font-weight: bold;
   padding: 0 18px 0 48px;
   font-size: 16px;
+  font-family: poppins;
+  font-weight: bold;
   border-radius: 10px;
   border: 1px solid transparent;
 }
 
-
-
-
-
-
 .field input::placeholder,
 .message textarea::placeholder{
-  color: #cacaca;
+  color: #555555;
 }
 .field input:focus,
 .message textarea:focus{
@@ -242,15 +363,14 @@ form .button-area{
   display: flex;
   align-items: center;
 }
-.button-area a{
+.button-area button{
   color: #b3b2b2;
   border: none;
   margin: 10px;
-  width: 100%;
-  text-align: center;
-  text-decoration: none;
   outline: none;
-  font-size: 18px;
+  width: 100%;
+  padding: 16px 0;
+  font-size: 16px;
  font-weight: bold;
   font-family: poppins;
   cursor: pointer;
@@ -259,7 +379,7 @@ form .button-area{
   background: rgb(24, 24, 24);
   transition: background 0.3s ease;
 }
-.button-area a:hover{
+.button-area button:hover{
   background: black;
 }
 .button-area span{
@@ -310,8 +430,7 @@ form .button-area{
 .wrapper{
  margin-top: 40px;
  margin-bottom: 50px;
- margin-left: 5px;
- margin-right: 5px;
+ 
 }
   
   .wrapper header{
@@ -326,8 +445,7 @@ form .button-area{
   }
   form .dbl-field .field{
     width: 100%;
-    height:75px;
-	
+    height: 45px;
     margin-bottom: 20px;
   }
   form .message textarea{

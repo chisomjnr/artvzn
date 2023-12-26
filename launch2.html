@@ -12,8 +12,7 @@
   <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-
+ 
   <!-- 
     - custom css link
   -->
@@ -38,10 +37,10 @@
   <header class="header" data-header>
     <div class="container">
 
-		<a href="prompt.html">
-			<ion-icon name="chevron-back" style="color: orange; font-size: 20px;"></ion-icon>
-			<!-- back -->
-		</a>
+      <a id="goBackLink" href="">
+        <ion-icon name="chevron-back" style="color: orange; font-size: 20px;"></ion-icon>
+        <!-- back -->
+      </a>
 
       <h1 class="h1 logo">
 
@@ -54,9 +53,9 @@
           <option value="ar">Fr</option>
         </select> -->
 
-        <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
+        <!-- <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
           <span class="icon"></span>
-        </button>
+        </button> -->
 
       </div>
 
@@ -74,23 +73,21 @@
           </li>
 
           <li>
-            <a href="about.html"target="blank"  class="navbar-link">About Us</a>
+            <a href="about.html"  class="navbar-link">About Us</a>
           </li>
 
 
 
           <li>
-            <a href="contact.html" target="blank" class="navbar-link">Contact Us</a>
+            <a href="contact.html" class="navbar-link">Contact Us</a>
           </li>
 
           <li>
-            <a href="login.html" target="blank" class="navbar-link">Login <strong style=" color: orange">/</strong> SignUp</a>
+            <a href="login.html" class="navbar-link">Login <strong style=" color: orange">/</strong> SignUp</a>
           </li>
 
           <li>
-            <a href="launch.html" target="blank" class="navbar-link">Launch a <strong style="  background: linear-gradient(45deg, yellow, rgb(255, 115, 0));
-				-webkit-background-clip: text; /* Clip the text to the background */
-				color: transparent ;">Ticketed Event</strong></a>
+            <a href="launch.html" class="navbar-link">Launch a <strong>Ticketed Event</strong></a>
           </li>
         </ul>
       </nav>
@@ -116,19 +113,25 @@
 
         <div class="contact-content section-content">
 
-          <p class="section-subtitle">Launch Event</p>
+          <p class="section-subtitle">Free Event</p>
 
-          <h2 class="h3 section-title">Launch your free ticket events on <strong style="  background: linear-gradient(45deg, yellow, rgb(255, 115, 0));
+          <h2 class="h3 section-title">Launch your free events on <strong style="  background: linear-gradient(45deg, yellow, rgb(255, 115, 0));
 			-webkit-background-clip: text; /* Clip the text to the background */
-			color: transparent ;">fluid.</strong></h2>
+			color: transparent ;">fluid</strong> with no stress.</h2>
 
           <p class="section-text">
-           With fluid you can create and share your event plans with family and friends.
+           With fluid you can create and share your free  event with family and friends.
+           <br>
+           Make use of our special features like RSVP, QR code generator and guest list feature for your free events.
+
+           <br>
+           <br>
+           Would you  prefer monitizing your events instead? <a style="color: rgb(0, 0, 0); text-decoration: underline; " href="launch.html">Then launch a paid event</a>
           </p>
 
 		  <br>
 
-		  <img src="img/BURIZU_ CHAPTER 1 (2) c.jpg" style="border-radius: 20px;   box-shadow: 60px 90px 170px -60px rgba(0, 0, 0, 0.733); " id="op" alt="">
+		  
 
           <!-- <ul class="contact-list">
 
@@ -171,7 +174,7 @@
               </div>
 
               <div class="wrapper">
-                <h3 class="h4 contact-item-title">Email:</h3>
+                <h3 class="h4 contact-item-title">text:</h3>
 
                 <a href="mailto:info@jack.com" class="contact-info">info@jack.com</a>
 
@@ -225,11 +228,11 @@
         <form style="   box-shadow: 90px -20px 170px -60px rgba(0, 0, 0, 0.356); background: rgb(7, 7, 7);" action="" class="contact-form">
 			<div class="form-wrapper">
 
-				<label for="email" class="form-label">Event Name</label>
+				<label for="text" class="form-label">Event Name</label>
 	
 				<div class="input-wrapper">
 	
-				  <input type="email" name="email" id="email" required placeholder="Name of Event"
+				  <input type="text" name="text" id="text" required placeholder="Name of Event"
 					class="input-field">
 	
 				
@@ -240,7 +243,7 @@
 
           <div class="form-wrapper ">
 
-            <label for="email" class="form-label">Event category</label>
+            <label for="text" class="form-label">Event category</label>
 
             <div class="input-wrapper">
 
@@ -273,11 +276,11 @@
 
 		  <div class="form-wrapper">
 
-			<label for="email" class="form-label"> Location</label>
+			<label for="text" class="form-label"> Location</label>
 
 			<div class="input-wrapper">
 
-			  <input type="email" name="email" id="email" required placeholder="Event Location (State & Area)"
+			  <input type="text" name="text" id="text" required placeholder="Event Location "
 				class="input-field">
 
 	
@@ -289,11 +292,11 @@
 		  
 		  <div class="form-wrapper">
 
-			<label for="email" class="form-label"> Date of Event</label>
+			<label for="text" class="form-label"> Date of Event</label>
 
 			<div class="input-wrapper">
 
-			  <input type="date" name="email" id="email" required 
+			  <input type="date" name="text" id="text" required 
 				class="input-field">
 
 
@@ -305,11 +308,11 @@
 
 		  <div class="form-wrapper">
 
-			<label for="email" class="form-label"> Start Time</label>
+			<label for="text" class="form-label"> Start Time</label>
 
 			<div class="input-wrapper">
 
-			  <input type="time" name="email" id="email" required 
+			  <input type="time" name="text" id="text" required 
 				class="input-field">
 
 
@@ -321,11 +324,11 @@
 		  
 		  <div class="form-wrapper">
 
-			<label for="email" class="form-label"> End Time</label>
+			<label for="text" class="form-label"> End Time</label>
 
 			<div class="input-wrapper">
 
-			  <input type="Time" name="email" id="email" required placeholder="Event Location (State & Area)"
+			  <input type="Time" name="text" id="text" required placeholder="Event Location (State & Area)"
 				class="input-field">
 
 	
@@ -352,11 +355,11 @@
 
 		  <div class="form-wrapper">
 
-			<label for="email" class="form-label"> Upload Event Poster/Flyer</label>
+			<label for="text" class="form-label"> Upload Event Poster/Flyer</label>
 
 			<div class="input-wrapper">
 
-			  <input type="file" name="email" id="email" required placeholder="Event Location (State & Area)"
+			  <input type="file" name="text" id="text" required placeholder="Event Location "
 				class="input-field">
 
 	
@@ -365,10 +368,10 @@
 
 		  </div>
 
+      <a href="login.html" style="text-align: center; margin-top: 90px;" class="btn btn-primary">Launch Event</a>
 
 
-
-          <button  onclick="openNewPage()" type="submit" class="btn btn-primary">Launch Event</button>
+        
 
         </form>
 
@@ -392,14 +395,16 @@
     - #FOOTER
   -->
 
+  <a href="#top" class="go-top" data-go-top title="Go to Top">
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
   <footer class="footer">
     <div class="container">
 
 
-      <p style="font-size: 13px;" class="copyright">
-		<strong style="  background: linear-gradient(45deg, yellow, rgb(255, 115, 0));
-		-webkit-background-clip: text; /* Clip the text to the background */
-		color: transparent ;">fluidnigeria.com</strong> was Designed & Developed by <a href="https://chisomjnr.github.io/junior.com" target="blank" style="color: rgb(84, 190, 89); font-weight: bolder;">Junior.</a></p>
+       <p style="font-size: 15px; color: black;" class="copyright">
+	Having Issues? <a href="https://chisomjnr.github.io/junior.com" style="color: rgb(96, 96, 96); font-weight: bolder; text-decoration: underline;">Contact our Support</a></p> -
 
     </div>
   </footer>
@@ -411,10 +416,6 @@
   <!-- 
     - #GO TO TOP
   -->
-
-  <a href="#top" class="go-top" data-go-top title="Go to Top">
-    <ion-icon name="arrow-up"></ion-icon>
-  </a>
 
 
 
@@ -430,6 +431,16 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+  <script>
+    document.getElementById("goBackLink").addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent the default behavior of the link
+    
+        history.back(); // Go back to the previous page
+    });
+    </script>
+
 
 </body>
 

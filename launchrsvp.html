@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="launchrsvp.css" />
+    <meta charset="utf-8">
+    <title>Fluid | Launch an Event</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="assets/LOGOS/PNG/SECONDARY/F 1.png">
+
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- <meta name="Koshila Foundation" content="Spreading hope & joy amongst the children.  ">
+<meta name="description" content="Feel free to connect with us."> -->
+
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <!-- 
+      - favicon
+    -->
+    <!-- <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml"> -->
+ 
+  
+  
+
+ <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+ rel="stylesheet">
+
+
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crafty Girls:wght@400;700;900&display=swap">
+    <style>
+      .form-container {
+          margin-bottom: 20px;
+      }
+
+      #remove-button {
+          display: none;
+      }
+      h3{
+        color: white;
+        margin-top: 30px;
+        border-radius: 20px ;
+        background: rgba(0, 0, 0, 0.562);
+        font-weight: 440;
+        padding: 12px;
+        margin: 20px;
+        font-size: 18px;
+        text-align: center;
+        font-family: poppins;
+      }
+  </style>
+</head>
+<body>
+
+    
+    <div class="wrapper">
+
+     
+      <header style="text-align: center;" >  
+        <a style="font-size: 15px;" href="" class="btnn" id="goBackLink">Back to previous page</a>
+        <br>
+        <br> 
+        <p style="font-size: 13px; font-weight: 300; color: rgb(221, 221, 221);">You're about to launch an event on <strong>Fluid.</strong></p>
+
+        Awesome!, now select a ticket type <stron style="font-weight: 500; font-family: Crafty Girls;">(optional)</strong>
+    </header>
+   
+    <div id="forms-container"></div>
+    <div id="form-template" class="form-container">
+
+      <form >
+      <!-- action="https://formspree.io/f/mzbnpalz"
+      method="POST"> -->
+  
+      <br>
+        <div class="dbl-field">
+          <div class="field">
+            <select id="input1"
+            class="input-field"  name="Events" id="lang">
+            <option value="en">Ticket Type</option>
+              <option value="en">Regular Tickets</option>
+              <option value="ar">VIP Tickets</option>
+              <option value="en">VVIP Tickets</option>
+           
+        
+  
+              </select>
+           
+        
+          </div>
+        
+        </div>
+
+        <div class="dbl-field">
+          <div class="field">
+            <input id="input2" type="number" name="Ticket_Price" placeholder="Ticket Price (Naira)">
+       
+          </div>
+        </div>
+
+
+
+
+        <div class="dbl-field">
+          <div class="field">
+            <input id="input3" type="number" name="Quantity_Available" placeholder="Quantity Available">
+   
+          </div>
+
+          
+
+        
+        </div>
+
+        <div style="display: none;" class="dbl-field">
+          <div class="field">
+            <input type="text" name="subject" placeholder=" New Paid Event Uploaded" value="New Uploaded Event (Paid Event) on Fluid ">
+   
+          </div>
+
+          
+
+         
+        </div>
+
+
+        <div class="form-actions">
+          <button style="padding: 5px 18px; font-size: 30px; font-family: poppins; font-weight: bolder; border-radius: 50%; background: rgba(0, 0, 0, 0.568); color: white; border: none;" type="button" onclick="duplicateForm()">+</button>
+          <button  style="padding: 5px 18px; font-size: 30px; font-family: poppins; font-weight: bolder; border-radius: 50%; background: rgba(0, 0, 0, 0.568); color: white; border:none" type="button" id="remove-button" onclick="removeLastForm()">-</button>
+      </div>
+
+
+        <header style="text-align: center;" >  
+        <br>
+          <p style="font-size: 13px; font-weight: 300; color: rgb(236, 236, 236);">You can choose to skip this step, Hence making your event a<strong> Free (Non-Profit) Event</strong>.</p></header>
+     
+
+        <div class="button-area">
+  
+         
+          <a href="launchsecondpage.html" class="btn" type="submit">Next Step</a>
+          
+       
+      
+       
+          <span></span>
+        </div>
+
+        <div class="button-area">
+       
+       
+          <a style="background: transparent; color: rgb(31, 31, 31); " href="launchsecondpage.html" class="btn" type="submit">Skip Step</a>
+          <span></span>
+       
+      
+       
+          <span></span>
+        </div>
+
+
+     
+      
+        <!-- <p style="font-size: 11px; text-align: center; color: grey;"><span style="color: #f9d400;">fluidnigeria.com </span> was Designed & Developed by <a style="color: green;" href="https://chisomjnr.github.io/junior.com" target="_blank"><strong>Junior.</strong></a>
+      </p> -->
+      </form>
+ 
+  
+    </div>
+      
+    </div>
+  
+  
+  </body>
+  <script>
+    document.getElementById("goBackLink").addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent the default behavior of the link
+    
+        history.back(); // Go back to the previous page
+    });
+    </script>
+
+
+
+
+  <script>
+  let formCount = 1;
+
+function duplicateForm() {
+    const originalForm = document.getElementById('form-template');
+    const clone = originalForm.cloneNode(true);
+    clone.id = 'form' + formCount++;
+
+    // Reset the values in the cloned form to avoid conflicts with IDs
+    clone.querySelectorAll('input').forEach(input => input.value = '');
+
+    // Add an h3 tag with "Hello" text to the cloned form
+    const h3 = document.createElement('h3');
+    h3.textContent = 'New ticket category';
+    clone.insertBefore(h3, clone.firstChild);
+
+    const formsContainer = document.getElementById('forms-container');
+    formsContainer.appendChild(clone);
+
+    // Show the "Remove Last Form" button when at least two forms are added
+    if (formCount > 1) {
+        document.getElementById('remove-button').style.display = 'inline-block';
+    }
+}
+
+function removeLastForm() {
+    const formsContainer = document.getElementById('forms-container');
+    const forms = formsContainer.getElementsByClassName('form-container');
+
+    // Ensure there is at least one form left
+    if (forms.length > 1) {
+        formsContainer.removeChild(forms[forms.length - 1]);
+        formCount--;
+
+        // Hide the "Remove Last Form" button if only one form is left
+        if (formCount <= 1) {
+            document.getElementById('remove-button').style.display = 'none';
+        }
+    } else {
+        alert('Cannot remove the last form!');
+    }
+}
+</script>
+</html>

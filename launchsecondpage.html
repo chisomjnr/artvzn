@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="launchsecondpage.css" />
+    <meta charset="utf-8">
+    <title>Fluid | Launch an Event</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="assets/LOGOS/PNG/SECONDARY/F 1.png">
+
+    <!-- <meta name="Koshila Foundation" content="Spreading hope & joy amongst the children.  ">
+<meta name="description" content="Feel free to connect with us."> -->
+
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <!-- 
+      - favicon
+    -->
+    <!-- <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml"> -->
+ 
+  
+  
+
+ <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  </head>
+
+
+  <body>
+    <div class="wrapper">
+   
+        <header style="text-align: center;" >  
+          <a style="font-size: 15px;" href="" class="btnn" id="goBackLink">Back to previous page</a>
+          <br>
+          <br> 
+          <p style="font-size: 13px; font-weight: 300; color: rgb(241, 241, 241);">You're about to launch an event on <strong>Fluid.</strong></p>
+  
+          Great!, now choose a flyer & accent color
+      </header>
+
+
+<br>
+
+	<div class="container">
+		<input type="file" id="file" accept="image/*" hidden>
+		<div class="img-area" data-img="">
+			<i class='bx bxs-image icon'></i>
+			<h3>Upload Event Flyer</h3>
+			<!-- <p style=" margin-left: 5px; margin-right: 5px;">Image size must be less than <span>2MB</span></p> -->
+		</div>
+		<button class="select-image">Select Image</button>
+    </div>
+
+    <br>
+    <br>
+    <div class="container">
+		<input type="color" hidden>
+		<div class="img-area" data-img="">
+			<i class='bx bxs-palette icon'></i>
+			<h3>Select Colour Scheme</h3>
+			<!-- <p>Event colour s <span>2MB</span></p> -->
+		</div>
+		<button  id="colorButton" class="select-image">Select Scheme</button>
+
+    
+	</div>
+  
+    <br>
+    <br>
+    <div style="background: transparent;" class="container">
+	
+	
+        <p style="font-size: 13px; font-weight: 300; color: rgb(39, 39, 39); text-align: center;">You'll need to login/signup on  <strong>Fluid</strong> before you will be able to upload your event. .</p>
+	<br>
+    <br>
+<a href="launchrsvp2.html"  style="background: rgb(14, 14, 14); text-align: center ; text-decoration: none;" class="select-image">Next Step</a>
+	</div>
+
+</div>
+	<script src="launchsecondpage.js"></script>
+</body>
+  <script>
+    document.getElementById("goBackLink").addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent the default behavior of the link
+    
+        history.back(); // Go back to the previous page
+    });
+    </script>
+  
+
+
+
+
+</html>

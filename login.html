@@ -51,18 +51,13 @@
 
                 <input type="submit" value="Sign In" class="sign-btn" />
 
-               <input type="submit" value="Back to Previous Page" class="sign-btn2" onclick="goBack()"/>
+                <button id="goBackLink" class="sign-btn2">Back to Previous Page</button>
 
-               <script>
-                   // JavaScript function to go back to the previous page
-                   function goBack() {
-                       window.history.back();
-                   }
-               </script>
+            
 
                 <p class="text">
                   Forgotten your password or your login datails? 
-                  <a href="#">Get help</a> signing in.
+                  <a href="support.html">Get help</a> signing in.
                 </p>
               </div>
             </form>
@@ -113,14 +108,16 @@
                 </div>
 
                 <input type="submit" value="Sign Up" class="sign-btn" />
-                <input type="submit" value="Back to Previous Page" class="sign-btn2" onclick="goBack()"/>
+              
+                <button id="goBackLink" class="sign-btn2">Back to Previous Page</button>
 
                 <script>
-                    // JavaScript function to go back to the previous page
-                    function goBack() {
-                        window.history.back();
-                    }
-                </script>
+                  document.getElementById("goBackLink").addEventListener("click", function(event) {
+                      event.preventDefault(); // Prevent the default behavior of the link
+                  
+                      history.back(); // Go back to the previous page
+                  });
+                  </script>
                 <p class="text">
                   By signing up, I agree to the
                   <a href="#">Terms of Services</a> and
@@ -132,17 +129,17 @@
 
           <div class="carousel">
             <div class="images-wrapper">
-              <img src="./img/BURIZU_ CHAPTER 1 (1).jpg" class="image img-1 show" alt="" />
-              <img src="./img/BURIZU_ CHAPTER 1 (3).jpg" class="image img-2" alt="" />
-              <img src="./img/BURIZU_ CHAPTER 1.jpg" class="image img-3" alt="" />
+              <img src="img/Afrofuturist Artworks by Maxima Manga _ Inspiration Grid (1).jpeg" class="image img-1 show" alt="" />
+              <img src="img/Afrofuturist Artworks by Maxima Manga _ Inspiration Grid (2).jpeg" class="image img-2" alt="" />
+              <img src="img/Afrofuturist Artworks by Maxima Manga _ Inspiration Grid.jpeg" class="image img-3" alt="" />
             </div>
 
             <div class="text-slider">
               <div class="text-wrap">
                 <div class="text-group">
-                  <h2><strong>Create</strong> your own events. <a href="launch.html" class="btn">Create</a></h2>
-                  <h2><strong>Discover</strong> insane events. <a href="explore.html" class="btn" >Explore</a></h2>
-                  <h2><strong>Connect</strong> with vendors. <a href="vendor.html" class="btn"> Connect</a></h2>
+                  <h2 style="font-size: 17px; margin-left: 10px; margin-right: 10px;"><strong>Create</strong> your own events. <a href="launch.html" class="btn">Create</a></h2>
+                  <h2 style="font-size: 17px; margin-left: 10px; margin-right: 10px;"><strong>Discover</strong> insane events. <a href="explore.html" class="btn" >Explore</a></h2>
+                  <h2 style="font-size: 17px; margin-left: 10px; margin-right: 10px;"><strong>Connect</strong> with vendors. <a href="vendor.html" class="btn"> Connect</a></h2>
                 </div>
               </div>
 
@@ -168,7 +165,7 @@
     </main>
 
     <!-- Javascript file -->
-
+    
     <script src="login.js"></script>
   </body>
 </html>
